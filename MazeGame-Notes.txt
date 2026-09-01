@@ -29,12 +29,13 @@ https://cdn.jsdelivr.net/npm/javascript-astar@0.4.1/astar.min.js
 Roadmap forward to do:
 1. Implement collision detection a bit better. I'm thinking calculate distance of center of sprites and only consider it a collision when its within a certain distance in onCollision. Maybe can throw this in a util.
 2. Extra maps, load random one on new level.
-3. Bug where multiple enemies can collide with player at the same time, causing multiple loss of lives and breaking game over logic when number of lives gets set to 0.
+3. On title screen a how to play button/screen.
 
 Nice to have: 
 1. Extra lives. This might make the game a bit too easy, just an idea for now.
 2. Enemy behavior modes? Regular vs aggro?
 3. Homing missile behavior/animation looks a bit wonky, see if this can be cleaned up.
+4. General code clean up, remove magic numbers in hud, etc.
 
 original melon 17 import map entry for reference: "melonjs": "https://cdn.jsdelivr.net/npm/melonjs@17/+esm",
 previous melon import map: "melonjs": "https://cdn.jsdelivr.net/npm/melonjs@19.7.1/+esm",
