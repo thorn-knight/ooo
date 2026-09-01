@@ -152,9 +152,6 @@ class UIContainer extends me.Container {
         // call the constructor
         super();
 
-        // persistent across level change
-        this.isPersistent = true;
-
         // Use screen coordinates
         this.floating = true;
 
@@ -172,7 +169,6 @@ class UIContainer extends me.Container {
         this.levelItem = new LevelItem(levelXPos, levelYPos);
         this.levelItem.tint.setColor(0, 255, 0);
         this.levelItem.z = Infinity;
-        this.levelItem.isPersistent = true;
 
         // score
         let scoreXPos = bounds.right + 200;
@@ -180,7 +176,6 @@ class UIContainer extends me.Container {
         this.scoreItem = new ScoreItem(scoreXPos, scoreYPos);
         this.scoreItem.tint.setColor(0, 255, 0);
         this.scoreItem.z = Infinity;
-        this.scoreItem.isPersistent = true;
 
         // lives
         let livesIconXPos = bounds.right + 150;
@@ -188,14 +183,12 @@ class UIContainer extends me.Container {
         this.livesIcon = new me.Sprite(livesIconXPos, livesIconYPos, {image: "livesIcon"});
         this.livesIcon.relative = new me.Vector2d(livesIconXPos, livesIconYPos);
         this.livesIcon.floating = false;
-        this.livesIcon.isPersistent = true;
         this.livesIcon.z = Infinity;
 
         let livesCountXPos = bounds.right + 225;
         let livesCountYPos = bounds.top + 175;
         this.livesCountItem = new LivesCountItem(livesCountXPos, livesCountYPos);
         this.livesCountItem.z = Infinity;
-        this.livesCountItem.isPersistent = true;
         this.livesCountItem.tint.setColor(0, 255, 0);
 
         // equipped item label
@@ -215,7 +208,6 @@ class UIContainer extends me.Container {
         this.equippedLabel.relative = new me.Vector2d(equippedLabelXPos, equippedLabelYPos);
         this.equippedLabel.floating = false;
         this.equippedLabel.z = Infinity;
-        this.equippedLabel.isPersistent = true;
         this.equippedLabel.tint.setColor(0, 255, 0);
 
         // equipped item area, hud itself will update this
@@ -232,14 +224,12 @@ class UIContainer extends me.Container {
         this.oreIcon = new me.Sprite(oreIconXPos, oreIconYPos, {image: "oreImage"});
         this.oreIcon.relative = new me.Vector2d(oreIconXPos, oreIconYPos);
         this.oreIcon.floating = false;
-        this.oreIcon.isPersistent = true;
         this.oreIcon.z = Infinity;
 
         let oreCountXPos = bounds.right + 250;
         let oreCountYPos = bounds.top + 350;
         this.oreCountItem = new OreCountItem(oreCountXPos, oreCountYPos);
         this.oreCountItem.z = Infinity;
-        this.oreCountItem.isPersistent = true;
         this.oreCountItem.tint.setColor(0, 255, 0);
 
         // add our child elements

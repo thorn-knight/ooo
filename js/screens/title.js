@@ -1,4 +1,5 @@
 import * as me from 'melonjs';
+import game from '../game.js';
 
 class PlayButton extends me.UITextButton {
     constructor(x, y) {
@@ -15,8 +16,6 @@ class PlayButton extends me.UITextButton {
             hoverOnColor: 'rgb(22, 152, 22)'
         });
         this.floating = false;
-        //this.hover = true;
-        //this.isClickable = true;
     }
 
     onClick(event) {
@@ -28,8 +27,8 @@ class PlayButton extends me.UITextButton {
 class TitleScreen extends me.Stage {
     onResetEvent() {
         // background color and image
-        me.game.world.backgroundColor.parseCSS("#313431");
-        let bgSprite = new me.Sprite(me.game.viewport.width / 2, me.game.viewport.height / 2, {image: "title_gameover_bg"});
+        me.game.world.backgroundColor.parseCSS(game.BACKGROUND_COLOR);
+        let bgSprite = new me.Sprite(me.game.viewport.centerX, me.game.viewport.centerY, {image: "title_gameover_bg"});
         bgSprite.anchorPoint.set(0.5, 0.5);
         me.game.world.addChild(bgSprite, -1);
 

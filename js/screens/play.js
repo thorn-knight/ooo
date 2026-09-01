@@ -10,7 +10,7 @@ class PlayScreen extends me.Stage {
 
     onLevelLoaded() {
         getGraphMatrixFromCurrentLevel();
-        me.game.world.backgroundColor.parseCSS("#313431");
+        me.game.world.backgroundColor.parseCSS(game.BACKGROUND_COLOR);
 
         if (game.data.loadNextLevel) {
             game.data.ore = 0;
@@ -26,17 +26,14 @@ class PlayScreen extends me.Stage {
         me.game.world.addChild(game.hud, Infinity);
 
         // play bgm if not already playing
-        /*
         let currentTrack = me.audio.getCurrentTrack();
         if (currentTrack !== "gameplay-theme")
             me.audio.playTrack("gameplay-theme");
-        */
     }
 
     onDestroyEvent() {
         // stop bgm
-        //me.audio.stopTrack("gameplay-theme");
-        //me.game.world.reset();
+        me.audio.stopTrack("gameplay-theme");
     }
 }
 

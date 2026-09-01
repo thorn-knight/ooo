@@ -32,7 +32,9 @@ var game = {
     // game logic managers
     itemManager : null,
     collectibleManager : null,
-    enemyManager : null
+    enemyManager : null,
+
+    BACKGROUND_COLOR : "#313431"
 };
 
 export default game;
