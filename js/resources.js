@@ -65,6 +65,7 @@ var resources = [
     { name: "equip", type: "audio", src: "data/sfx/" },
     { name: "teleport", type: "audio", src: "data/sfx/" },
     { name: "speed", type: "audio", src: "data/sfx/" },
+    { name: "level_complete", type: "audio", src: "data/sfx/" },
 
     /* Bitmap/fonts */
     { name: "PressStart2P", type:"image", src: "data/fnt/PressStart2P.png" },

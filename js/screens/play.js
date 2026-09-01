@@ -5,7 +5,14 @@ import { getGraphMatrixFromCurrentLevel } from './../entities/mapUtil.js';
 
 class PlayScreen extends me.Stage {
     onResetEvent() {
-        me.level.load("mars-map1", {onLoaded: this.onLevelLoaded});
+        if (game.data.loadNextLevel) {
+            me.audio.play("level_complete", false);
+            me.game.viewport.fadeIn("#FFFFFF", 175, ()=> {
+                me.level.load("mars-map1", {onLoaded: this.onLevelLoaded});
+            });
+        }
+        else
+            me.level.load("mars-map1", {onLoaded: this.onLevelLoaded});
     }
 
     onLevelLoaded() {
