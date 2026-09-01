@@ -189,6 +189,12 @@ class PlayerEntity extends me.Entity {
     onCollision(response, other) {
         let retVal = true;
         switch (other.body.collisionType) {
+            case me.collision.types.WORLD_SHAPE :
+                //console.log("world shape collision! response value here is :");
+                //console.log(response);
+                if (response.overlap < 1.8)
+                    retVal = false;
+                break;
             case me.collision.types.COLLECTABLE_OBJECT :
                 retVal = false;
                 if (other.name === ITEM_ENTITY_NAME)
