@@ -1,9 +1,11 @@
 import * as me from 'melonjs';
+import game from '../game.js';
 import { ENEMY_TYPES } from './enemy.js';
 import { getSpawnPoints } from './mapUtil.js';
 
 var spawnedEnemyMap = new Map();
 var enemySpawnPoints = [];
+const ENEMY_KILL_SCORE = 50;
 
 class EnemyManager {
     constructor() {
@@ -65,6 +67,7 @@ class EnemyManager {
     }
 
     removeEnemyByName(enemyName) {
+        game.data.score += ENEMY_KILL_SCORE;
         spawnedEnemyMap.set(enemyName, null);
     }
 
