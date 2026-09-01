@@ -10,8 +10,6 @@ this is: width = 768, height = 924
 
 For tilesets spacing between seems to be 4px
 
-https://www.youtube.com/watch?v=AQtpVCkU6fY  - guy does good Krita videos
-
 Process to convert animations to new maze game in Krita.
     1. Start with spritesheet from old maze game resources folder, open it in krita.
     2. In krita, file -> new. 32x42 dimensions.
@@ -28,23 +26,15 @@ https://unpkg.com/browse/
 https://cdn.jsdelivr.net/npm/javascript-astar@0.4.1/astar.min.js
 
 
-LEFT OFF - issues:
+Roadmap forward to do:
 1. Collision detection now seems fixed in latest melon release 19.4. Pointed at that now. Current issue is that when walking upwards player stops sometimes. Seems to be when there's collision horizontally to the tile? This might also be a melon thing, may just work around it for now.
+2. Implement collision detection a bit better. I'm thinking calculate distance of center of sprites and only consider it a collision when its within a certain distance in onCollision. Maybe can throw this in a util.
+3. Extra maps, load random one on new level.
 
-
-Roadmap forward:
-
-5. Title/Game over screen. BLOCKED BY MELON ISSUE FOR NOW.
-
-6. Extra lives(?) - This is a maybe, might make game too easy.
-7. Increase score for killing enemies.
-8. Enemy behavior modes? Regular vs aggro? This is also a maybe.
-9. Extra maps, load random one on new level.
-10. See if we can implement collision detection a bit better. I'm thinking calculate distance of center of sprites and only consider it a collision when its within a certain distance in onCollision. Maybe can throw this in a util.
-11. z-axis issue, player and enemies should always be on top of items/collectibles - nice to have.
+Nice to have: 
+1. Extra lives(?)
+2. Enemy behavior modes? Regular vs aggro?
 
 original melon 17 import map entry for reference: "melonjs": "https://cdn.jsdelivr.net/npm/melonjs@17/+esm",
-
-previous melon 19 import map entry: "melonjs": "https://cdn.jsdelivr.net/npm/melonjs@19.4.0/+esm",
-
 previous melon import map: "melonjs": "https://cdn.jsdelivr.net/npm/melonjs@19.7.1/+esm",
+
