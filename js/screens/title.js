@@ -15,7 +15,7 @@ class PlayButton extends me.UITextButton {
             hoverOffColor: '#00FF00',
             hoverOnColor: 'rgb(22, 152, 22)'
         });
-        this.floating = false;
+        this.floating = true;
     }
 
     onClick(event) {
@@ -30,6 +30,7 @@ class TitleScreen extends me.Stage {
         me.game.world.backgroundColor.parseCSS(game.BACKGROUND_COLOR);
         let bgSprite = new me.Sprite(me.game.viewport.centerX, me.game.viewport.centerY, {image: "title_gameover_bg"});
         bgSprite.anchorPoint.set(0.5, 0.5);
+        bgSprite.floating = true;
         me.game.world.addChild(bgSprite, -1);
 
         // title text
@@ -47,7 +48,7 @@ class TitleScreen extends me.Stage {
             }
         );
         titleText.tint.setColor(0, 255, 0);
-
+        titleText.floating = true;
         me.game.world.addChild(titleText, 1);
 
         this.playButton = new PlayButton(titleX, titleY + 100);

@@ -33,20 +33,18 @@ LEFT OFF - issues:
 
 
 Roadmap forward:
-1. Fix UI. BG color, position of equipped item vs ore - done for now.
-2. Player teleport in on spawn animation. Use existing teleport - done.
-3. Fix bug with homing missile. Sometimes if timing is right it can get grab a path of 0 length, this refreshes every .5 second - tentatively done. If null path or length 0 is found just keep trying. Log a warning.
-4. Next level functionality - done.
 
 5. Title/Game over screen. BLOCKED BY MELON ISSUE FOR NOW.
 
-6. Extra lives(?) This is a maybe, might make game too easy.
+6. Extra lives(?) - This is a maybe, might make game too easy.
 7. Increase score for killing enemies.
 8. Enemy behavior modes? Regular vs aggro? This is also a maybe.
 9. Extra maps, load random one on new level.
 10. See if we can implement collision detection a bit better. I'm thinking calculate distance of center of sprites and only consider it a collision when its within a certain distance in onCollision. Maybe can throw this in a util.
-11. z-axis issue, player and enemies should always be on top of items/collectibles.
+11. z-axis issue, player and enemies should always be on top of items/collectibles - nice to have.
 
 original melon 17 import map entry for reference: "melonjs": "https://cdn.jsdelivr.net/npm/melonjs@17/+esm",
 
 previous melon 19 import map entry: "melonjs": "https://cdn.jsdelivr.net/npm/melonjs@19.4.0/+esm",
+
+previous melon import map: "melonjs": "https://cdn.jsdelivr.net/npm/melonjs@19.7.1/+esm",

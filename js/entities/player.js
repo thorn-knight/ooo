@@ -298,7 +298,6 @@ class PlayerEntity extends me.Entity {
 
             // check for game over
             if (game.data.lives === 0) {
-                me.game.world.reset();
                 me.state.change(me.state.GAMEOVER);
             }
             else

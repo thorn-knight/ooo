@@ -155,6 +155,7 @@ export default function onload() {
             }
 
             // toggle fullscreen on/off
+            
             if (keyCode === me.input.KEY.F) {
                 if (!me.device.isFullscreen()) {
                     me.device.requestFullscreen();
@@ -162,6 +163,7 @@ export default function onload() {
                     me.device.exitFullscreen();
                 }
             }
+            
         });
 
         // switch to PLAY state

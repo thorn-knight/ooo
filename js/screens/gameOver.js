@@ -1,5 +1,5 @@
 import * as me from 'melonjs';
-import game from './../game.js';
+import game from '../game.js';
 
 class BackToTitleButton extends me.UITextButton {
     constructor(x, y) {
@@ -15,11 +15,24 @@ class BackToTitleButton extends me.UITextButton {
             hoverOffColor: '#00FF00',
             hoverOnColor: 'rgb(22, 152, 22)'
         });
-        this.floating = false;
+        this.floating = true;
     }
 
     onClick(event) {
+        this.resetGameData();
         me.state.change(me.state.MENU);
+    }
+
+    resetGameData() {
+        game.data.level = 1;
+        game.data.score = 0;
+        game.data.lives = 3;
+        game.data.ore = 0;
+        game.data.oreRequiredThisLevel = 0;
+        game.data.loadNextLevel = false;
+        game.collectibleManager.reset(true);
+        game.enemyManager.reset(true);
+        game.itemManager.reset(true);
     }
 }
 
@@ -29,6 +42,7 @@ class GameOverScreen extends me.Stage {
         me.game.world.backgroundColor.parseCSS(game.BACKGROUND_COLOR);
         let bgSprite = new me.Sprite(me.game.viewport.centerX, me.game.viewport.centerY, {image: "title_gameover_bg"});
         bgSprite.anchorPoint.set(0.5, 0.5);
+        bgSprite.floating = true;
         me.game.world.addChild(bgSprite, -1);
 
         // game over text
@@ -47,6 +61,7 @@ class GameOverScreen extends me.Stage {
             }
         );
         gameOverText.tint.setColor(0, 255, 0);
+        gameOverText.floating = true;
         me.game.world.addChild(gameOverText, 1);
 
         // score text
@@ -62,6 +77,7 @@ class GameOverScreen extends me.Stage {
             }
         );
         scoreText.tint.setColor(0, 255, 0);
+        scoreText.floating = true;
         me.game.world.addChild(scoreText, 2);
 
         // level text
@@ -77,6 +93,7 @@ class GameOverScreen extends me.Stage {
             }
         );
         levelText.tint.setColor(0, 255, 0);
+        levelText.floating = true;
         me.game.world.addChild(levelText, 3);
 
         // back button
