@@ -1,20 +1,17 @@
 import * as me from 'melonjs';
 import game from '../game.js';
 
-const BUTTON_OFFSET_WIDTH = 40;
-const BUTTON_OFFSET_HEIGHT = 20;
-
 class PlayButton extends me.UITextButton {
     constructor(x, y) {
         super(x, y, {
-            font : "PressStart2P",
+            font : game.FONT,
             text : "PLAY",
             fillStyle : '#000000',
             textAlign : "center",
             textBaseline : "middle",
             size : game.TEXT_SIZE_BUTTON,
-            hoverOffColor: '#00FF00',
-            hoverOnColor: 'rgb(22, 152, 22)'
+            hoverOffColor: game.BUTTON_HOVER_OFF_COLOR,
+            hoverOnColor: game.BUTTON_HOVER_ON_COLOR
         });
         this.floating = true;
     }
@@ -27,16 +24,20 @@ class PlayButton extends me.UITextButton {
 class HowToPlayButton extends me.UITextButton {
     constructor(x, y) {
         super(x, y, {
-            font : "PressStart2P",
+            font : game.FONT,
             text : "HOW TO PLAY",
             fillStyle : '#000000',
             textAlign : "center",
             textBaseline : "middle",
             size : game.TEXT_SIZE_BUTTON,
-            hoverOffColor: '#00FF00',
-            hoverOnColor: 'rgb(22, 152, 22)'        
+            hoverOffColor: game.BUTTON_HOVER_OFF_COLOR,
+            hoverOnColor: game.BUTTON_HOVER_ON_COLOR     
         });
         this.floating = true;
+    }
+
+    onClick(event) {
+        me.state.change(me.state.SETTINGS);
     }
 }
 
@@ -56,7 +57,7 @@ class TitleScreen extends me.Stage {
             titleX,
             titleY,
             {
-                font : "PressStart2P",
+                font : game.FONT,
                 textAlign : "center",
                 textBaseline : "bottom",
                 size : game.TEXT_SIZE_TITLE,

@@ -27,9 +27,8 @@ https://cdn.jsdelivr.net/npm/javascript-astar@0.4.1/astar.min.js
 
 
 Roadmap forward to do:
-1. Implement collision detection a bit better. I'm thinking calculate distance of center of sprites and only consider it a collision when its within a certain distance in onCollision. Maybe can throw this in a util. UPDATE possibly done with latest updates checking game.WORLD_SHAPE_COLLISION_OVERLAP_THRESHOLD and game.ENTITY_COLLISION_OVERLAP_THRESHOLD? Need to apply this to other collisions types but seems to work? May need to tighten the value but it looks like 'actual collision' needs to happen and we can't be killed through walls/adjacent tiles anymore.
-2. Extra maps, load random one on new level.
-3. On title screen a how to play button/screen.
+1. Extra maps, load random one on new level.
+2. On title screen a how to play button/screen. Button added, need to add new screen. Updates added to remove more magic numbers for button and label color and size.
 
 Nice to have: 
 1. Extra lives. This might make the game a bit too easy, just an idea for now.

@@ -34,6 +34,9 @@ var game = {
     collectibleManager : null,
     enemyManager : null,
 
+    // global font
+    FONT : "PressStart2P",
+
     // global collision overlap thresholds to be used in onCollision logic
     // if response.overlap is less than this don't count it as a collision
     WORLD_SHAPE_COLLISION_OVERLAP_THRESHOLD : 1.8,
@@ -42,6 +45,10 @@ var game = {
     // text sizes for buttons and game title
     TEXT_SIZE_TITLE : 1.5,
     TEXT_SIZE_BUTTON : 1.2,
+    TEXT_SIZE_LABEL : 1,
+
+    BUTTON_HOVER_OFF_COLOR : '#00FF00',
+    BUTTON_HOVER_ON_COLOR : 'rgb(22, 152, 22)',
 
     BACKGROUND_COLOR : "#313431"
 };

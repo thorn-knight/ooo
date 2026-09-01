@@ -8,6 +8,7 @@ import resources from './resources.js';
 import TitleScreen from './screens/title.js';
 import PlayScreen from './screens/play.js';
 import GameOverScreen from './screens/gameOver.js';
+import HowToPlayScreen from './screens/howToPlay.js';
 
 import PlayerEntity from './entities/player.js';
 import GemEntity from './entities/gem.js';
@@ -57,6 +58,7 @@ export default function onload() {
         me.state.set(me.state.MENU, new TitleScreen());
         me.state.set(me.state.PLAY, new PlayScreen());
         me.state.set(me.state.GAMEOVER, new GameOverScreen());
+        me.state.set(me.state.SETTINGS, new HowToPlayScreen());
 
         // set the fade transition effect
         me.state.transition("fade", "#FFFFFF", 250);

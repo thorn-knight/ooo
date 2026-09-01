@@ -10,8 +10,8 @@ class BackToTitleButton extends me.UITextButton {
             textAlign : "center",
             textBaseline : "middle",
             size : game.TEXT_SIZE_BUTTON,
-            hoverOffColor: '#00FF00',
-            hoverOnColor: 'rgb(22, 152, 22)'
+            hoverOffColor: game.BUTTON_HOVER_OFF_COLOR,
+            hoverOnColor: game.BUTTON_HOVER_ON_COLOR
         });
         this.floating = true;
     }
@@ -51,10 +51,10 @@ class GameOverScreen extends me.Stage {
             gameOverX,
             gameOverY,
             {
-                font : "PressStart2P",
+                font : game.FONT,
                 textAlign : "center",
                 textBaseline : "bottom",
-                size : 1.5,
+                size : game.TEXT_SIZE_TITLE,
                 text : "GAME OVER"
             }
         );
@@ -67,10 +67,10 @@ class GameOverScreen extends me.Stage {
             gameOverX,
             gameOverY + 100,
             {
-                font : "PressStart2P",
+                font : game.FONT,
                 textAlign : "center",
                 textBaseline : "bottom",
-                size : 1,
+                size : game.TEXT_SIZE_LABEL,
                 text : "SCORE : " + game.data.score
             }
         );
@@ -83,10 +83,10 @@ class GameOverScreen extends me.Stage {
             gameOverX,
             gameOverY + 200,
             {
-                font : "PressStart2P",
+                font : game.FONT,
                 textAlign : "center",
                 textBaseline : "bottom",
-                size : 1,
+                size : game.TEXT_SIZE_LABEL,
                 text : "LEVEL : " + game.data.level
             }
         );

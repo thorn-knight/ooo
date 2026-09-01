@@ -12,7 +12,7 @@ class ScoreItem extends me.BitmapText {
             x,
             y,
             {
-                font : "PressStart2P",
+                font : game.FONT,
                 textAlign : "center",
                 textBaseline : "bottom",
                 size : 1,
@@ -43,7 +43,7 @@ class LevelItem extends me.BitmapText {
             x,
             y,
             {
-                font : "PressStart2P",
+                font : game.FONT,
                 textAlign : "center",
                 textBaseline : "bottom",
                 size : 1,
@@ -75,7 +75,7 @@ class LivesCountItem extends me.BitmapText {
             x,
             y,
             {
-                font : "PressStart2P",
+                font : game.FONT,
                 textAlign : "center",
                 textBaseline : "bottom",
                 size : 1,
@@ -107,7 +107,7 @@ class OreCountItem extends me.BitmapText {
             x,
             y,
             {
-                font : "PressStart2P",
+                font : game.FONT,
                 textAlign : "center",
                 textBaseline : "bottom",
                 size : 1,
@@ -199,7 +199,7 @@ class UIContainer extends me.Container {
             equippedLabelXPos,
             equippedLabelYPos,
             {
-                font : "PressStart2P",
+                font : game.FONT,
                 textAlign : "center",
                 textBaseline : "bottom",
                 size : 1,
