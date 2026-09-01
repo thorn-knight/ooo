@@ -120,6 +120,7 @@ class OreCountItem extends me.BitmapText {
 
         // local copy of game ore count
         this.oreCount = 0;
+        this.setText(": " + this.oreCount + "/" + game.data.oreRequiredThisLevel);
     }
 
     update(dt) {

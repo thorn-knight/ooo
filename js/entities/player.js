@@ -190,8 +190,6 @@ class PlayerEntity extends me.Entity {
         let retVal = true;
         switch (other.body.collisionType) {
             case me.collision.types.WORLD_SHAPE :
-                //console.log("world shape collision! response value here is :");
-                //console.log(response);
                 if (response.overlap < 1.8)
                     retVal = false;
                 break;
