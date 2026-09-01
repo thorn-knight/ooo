@@ -1,0 +1,215 @@
+{
+  "frames": [
+    {
+      "filename": "sentinel_run_backward_1.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 82
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 6,
+        "y": 2,
+        "w": 50,
+        "h": 82
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "sentinel_run_backward_2.png",
+      "frame": {
+        "x": 0,
+        "y": 82,
+        "w": 50,
+        "h": 82
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 6,
+        "y": 2,
+        "w": 50,
+        "h": 82
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "sentinel_run_backward_3.png",
+      "frame": {
+        "x": 0,
+        "y": 164,
+        "w": 50,
+        "h": 82
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 6,
+        "y": 2,
+        "w": 50,
+        "h": 82
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "sentinel_run_backward_4.png",
+      "frame": {
+        "x": 0,
+        "y": 246,
+        "w": 50,
+        "h": 82
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 6,
+        "y": 2,
+        "w": 50,
+        "h": 82
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "sentinel_run_forward_1.png",
+      "frame": {
+        "x": 0,
+        "y": 328,
+        "w": 50,
+        "h": 82
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 6,
+        "y": 2,
+        "w": 50,
+        "h": 82
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "sentinel_run_forward_2.png",
+      "frame": {
+        "x": 0,
+        "y": 410,
+        "w": 50,
+        "h": 82
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 6,
+        "y": 2,
+        "w": 50,
+        "h": 82
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "sentinel_run_forward_3.png",
+      "frame": {
+        "x": 0,
+        "y": 492,
+        "w": 50,
+        "h": 82
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 6,
+        "y": 2,
+        "w": 50,
+        "h": 82
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "sentinel_run_forward_4.png",
+      "frame": {
+        "x": 0,
+        "y": 574,
+        "w": 50,
+        "h": 82
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 6,
+        "y": 2,
+        "w": 50,
+        "h": 82
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  ],
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "sentinel.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 50,
+      "h": 656
+    },
+    "scale": 1
+  }
+}

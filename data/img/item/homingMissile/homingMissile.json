@@ -1,0 +1,165 @@
+{
+  "frames": [
+    {
+      "filename": "homingMissile_default_1.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 62,
+        "h": 20
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 32,
+        "w": 62,
+        "h": 20
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "homingMissile_default_2.png",
+      "frame": {
+        "x": 62,
+        "y": 0,
+        "w": 60,
+        "h": 20
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 32,
+        "w": 60,
+        "h": 20
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "homingMissile_down_1.png",
+      "frame": {
+        "x": 122,
+        "y": 0,
+        "w": 20,
+        "h": 62
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 32,
+        "y": 2,
+        "w": 20,
+        "h": 62
+      },
+      "sourceSize": {
+        "w": 84,
+        "h": 64
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "homingMissile_up_1.png",
+      "frame": {
+        "x": 0,
+        "y": 20,
+        "w": 20,
+        "h": 62
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 32,
+        "y": 0,
+        "w": 20,
+        "h": 62
+      },
+      "sourceSize": {
+        "w": 84,
+        "h": 64
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "homingMissile_down_2.png",
+      "frame": {
+        "x": 20,
+        "y": 20,
+        "w": 20,
+        "h": 60
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 32,
+        "y": 2,
+        "w": 20,
+        "h": 60
+      },
+      "sourceSize": {
+        "w": 84,
+        "h": 64
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "homingMissile_up_2.png",
+      "frame": {
+        "x": 40,
+        "y": 20,
+        "w": 20,
+        "h": 60
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 32,
+        "y": 2,
+        "w": 20,
+        "h": 60
+      },
+      "sourceSize": {
+        "w": 84,
+        "h": 64
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  ],
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "homingMissile.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 142,
+      "h": 82
+    },
+    "scale": 1
+  }
+}

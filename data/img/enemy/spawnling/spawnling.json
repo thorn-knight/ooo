@@ -1,0 +1,165 @@
+{
+  "frames": [
+    {
+      "filename": "spawnling_run_down_1.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 56,
+        "h": 78
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 6,
+        "w": 56,
+        "h": 78
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "spawnling_run_down_2.png",
+      "frame": {
+        "x": 0,
+        "y": 78,
+        "w": 56,
+        "h": 78
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 6,
+        "w": 56,
+        "h": 78
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "spawnling_run_up_1.png",
+      "frame": {
+        "x": 0,
+        "y": 156,
+        "w": 56,
+        "h": 76
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 8,
+        "w": 56,
+        "h": 76
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "spawnling_run_up_2.png",
+      "frame": {
+        "x": 0,
+        "y": 232,
+        "w": 56,
+        "h": 76
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 8,
+        "w": 56,
+        "h": 76
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "spawnling_run_right_1.png",
+      "frame": {
+        "x": 0,
+        "y": 308,
+        "w": 62,
+        "h": 70
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 14,
+        "w": 62,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "spawnling_run_right_2.png",
+      "frame": {
+        "x": 56,
+        "y": 0,
+        "w": 60,
+        "h": 70
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 14,
+        "w": 60,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  ],
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "spawnling.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 116,
+      "h": 378
+    },
+    "scale": 1
+  }
+}

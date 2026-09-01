@@ -1,0 +1,65 @@
+{
+  "frames": [
+    {
+      "filename": "teleport_default_1.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 60,
+        "h": 58
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 14,
+        "w": 60,
+        "h": 58
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "teleport_default_2.png",
+      "frame": {
+        "x": 60,
+        "y": 0,
+        "w": 40,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 10,
+        "y": 22,
+        "w": 40,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  ],
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "teleport.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 100,
+      "h": 58
+    },
+    "scale": 1
+  }
+}

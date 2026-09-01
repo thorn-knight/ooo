@@ -1,0 +1,115 @@
+{
+  "frames": [
+    {
+      "filename": "bomb_armed_1.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 52,
+        "h": 74
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 6,
+        "y": 10,
+        "w": 52,
+        "h": 74
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "bomb_armed_2.png",
+      "frame": {
+        "x": 0,
+        "y": 74,
+        "w": 52,
+        "h": 74
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 10,
+        "w": 52,
+        "h": 74
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "bomb_default_1.png",
+      "frame": {
+        "x": 0,
+        "y": 148,
+        "w": 52,
+        "h": 70
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 6,
+        "y": 14,
+        "w": 52,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "bomb_default_2.png",
+      "frame": {
+        "x": 0,
+        "y": 218,
+        "w": 52,
+        "h": 70
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 6,
+        "y": 14,
+        "w": 52,
+        "h": 70
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  ],
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "bomb.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 52,
+      "h": 288
+    },
+    "scale": 1
+  }
+}

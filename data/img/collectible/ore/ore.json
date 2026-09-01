@@ -1,0 +1,90 @@
+{
+  "frames": [
+    {
+      "filename": "ore_sparkle_2.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 63,
+        "h": 82
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 63,
+        "h": 82
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "ore_sparkle_1.png",
+      "frame": {
+        "x": 0,
+        "y": 82,
+        "w": 62,
+        "h": 81
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 1,
+        "w": 62,
+        "h": 81
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "ore_default_1.png",
+      "frame": {
+        "x": 0,
+        "y": 163,
+        "w": 59,
+        "h": 72
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 10,
+        "w": 59,
+        "h": 72
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  ],
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "ore.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 63,
+      "h": 235
+    },
+    "scale": 1
+  }
+}

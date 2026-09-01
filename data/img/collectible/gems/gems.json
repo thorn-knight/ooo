@@ -1,0 +1,215 @@
+{
+  "frames": [
+    {
+      "filename": "diamond_1.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 36
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 8,
+        "y": 26,
+        "w": 50,
+        "h": 36
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "diamond_2.png",
+      "frame": {
+        "x": 50,
+        "y": 0,
+        "w": 50,
+        "h": 36
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 8,
+        "y": 26,
+        "w": 50,
+        "h": 36
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "emerald_1.png",
+      "frame": {
+        "x": 100,
+        "y": 0,
+        "w": 50,
+        "h": 36
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 8,
+        "y": 26,
+        "w": 50,
+        "h": 36
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "emerald_2.png",
+      "frame": {
+        "x": 150,
+        "y": 0,
+        "w": 50,
+        "h": 36
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 8,
+        "y": 26,
+        "w": 50,
+        "h": 36
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "ruby_1.png",
+      "frame": {
+        "x": 200,
+        "y": 0,
+        "w": 50,
+        "h": 36
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 8,
+        "y": 26,
+        "w": 50,
+        "h": 36
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "ruby_2.png",
+      "frame": {
+        "x": 250,
+        "y": 0,
+        "w": 50,
+        "h": 36
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 8,
+        "y": 26,
+        "w": 50,
+        "h": 36
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "sapphire_1.png",
+      "frame": {
+        "x": 300,
+        "y": 0,
+        "w": 50,
+        "h": 36
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 8,
+        "y": 26,
+        "w": 50,
+        "h": 36
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "filename": "sapphire_2.png",
+      "frame": {
+        "x": 350,
+        "y": 0,
+        "w": 50,
+        "h": 36
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 8,
+        "y": 26,
+        "w": 50,
+        "h": 36
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  ],
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "gems.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 400,
+      "h": 36
+    },
+    "scale": 1
+  }
+}

@@ -1,0 +1,14 @@
+{ "columns":15,
+ "image":"mars-tiles.png",
+ "imageheight":256,
+ "imagewidth":1024,
+ "margin":0,
+ "name":"mars-tileset",
+ "spacing":4,
+ "tilecount":30,
+ "tiledversion":"1.11.0",
+ "tileheight":84,
+ "tilewidth":64,
+ "type":"tileset",
+ "version":"1.10"
+}

@@ -1,0 +1,52 @@
+
+Run local server py -m http.server
+
+Old sprite size: 32 x 42 without background.
+
+New sprite size : 64 x 84
+
+New map width = 12, height = 11 (tiles)
+this is: width = 768, height = 924
+
+For tilesets spacing between seems to be 4px
+
+https://www.youtube.com/watch?v=AQtpVCkU6fY  - guy does good Krita videos
+
+Process to convert animations to new maze game in Krita.
+    1. Start with spritesheet from old maze game resources folder, open it in krita.
+    2. In krita, file -> new. 32x42 dimensions.
+    3. Rectangle select the image from the spritesheet and copy it.
+    4. In new file, paste or do ctrl + alt + v to paste at cursor (useful if it gets cut off on paste). Save the new file (as PNG). Rectangle select it and move it if needed.
+    5. Close and re-open the file. Pick a color to be the background and use the fill tool (paint bucket thing) to fill it everywhere there's background.
+    6. Select the similar color selection tool and click on the background color. Press delete key, this should remove all the background.
+    7. Close and re-open the file. Image -> scale image to new size. Do dimensions 64x84 and save it.
+    8. Rinse and repeat for each image in the spritesheet.
+    9. Once done use free texture packer to re-pack everything into a texture png + json file. IMPORTANT - select JSON (array) as the format for melon.
+
+
+https://unpkg.com/browse/
+https://cdn.jsdelivr.net/npm/javascript-astar@0.4.1/astar.min.js
+
+
+LEFT OFF - issues:
+1. Collision detection now seems fixed in latest melon release 19.4. Pointed at that now. Current issue is that when walking upwards player stops sometimes. Seems to be when there's collision horizontally to the tile? This might also be a melon thing, may just work around it for now.
+
+
+Roadmap forward:
+1. Fix UI. BG color, position of equipped item vs ore - done for now.
+2. Player teleport in on spawn animation. Use existing teleport - done.
+3. Fix bug with homing missile. Sometimes if timing is right it can get grab a path of 0 length, this refreshes every .5 second - tentatively done. If null path or length 0 is found just keep trying. Log a warning.
+4. Next level functionality - done.
+
+5. Title/Game over screen. BLOCKED BY MELON ISSUE FOR NOW.
+
+6. Extra lives(?) This is a maybe, might make game too easy.
+7. Increase score for killing enemies.
+8. Enemy behavior modes? Regular vs aggro? This is also a maybe.
+9. Extra maps, load random one on new level.
+10. See if we can implement collision detection a bit better. I'm thinking calculate distance of center of sprites and only consider it a collision when its within a certain distance in onCollision. Maybe can throw this in a util.
+11. z-axis issue, player and enemies should always be on top of items/collectibles.
+
+original melon 17 import map entry for reference: "melonjs": "https://cdn.jsdelivr.net/npm/melonjs@17/+esm",
+
+previous melon 19 import map entry: "melonjs": "https://cdn.jsdelivr.net/npm/melonjs@19.4.0/+esm",
