@@ -40,9 +40,23 @@ class PlayerEntity extends me.Entity {
         this.bindKeyboardInput();
         this.initAnimations();
 
+        //this.resizeHitbox();
+
         // set the renderable position to middle
         this.anchorPoint.set(0.5, 0.5);
     }
+
+    /*
+    resizeHitbox() {
+        this.body.removeShapeAt(0);
+        let hitboxWidth = this.width;
+        let hitboxHeight = this.height - 20;
+        let offsetX = hitboxWidth / 2;
+        let offsetY = this.height - hitboxHeight;
+        this.body.addShape(new me.Rect(offsetX, offsetY, hitboxWidth, hitboxHeight));
+    }
+    */
+ 
 
     bindKeyboardInput() {
         // enable keyboard
@@ -153,7 +167,7 @@ class PlayerEntity extends me.Entity {
         else if (me.input.isKeyPressed(MOVE_DIRECTION.DOWN)) {
             this.body.force.set(0, this.body.maxVel.y);
         }
-
+        
         if (this.teleportTarget !== null && !this.canTeleport) {
             this.teleportUseInterval += dt;
             if (this.teleportUseInterval >= this.teleportUseLock) {

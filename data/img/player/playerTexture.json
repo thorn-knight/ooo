@@ -3,8 +3,8 @@
     {
       "filename": "player_default_1.png",
       "frame": {
-        "x": 1,
-        "y": 1,
+        "x": 0,
+        "y": 0,
         "w": 56,
         "h": 84
       },
@@ -28,8 +28,8 @@
     {
       "filename": "player_run_down_1.png",
       "frame": {
-        "x": 1,
-        "y": 87,
+        "x": 0,
+        "y": 84,
         "w": 54,
         "h": 84
       },
@@ -53,8 +53,8 @@
     {
       "filename": "player_death_1.png",
       "frame": {
-        "x": 1,
-        "y": 173,
+        "x": 0,
+        "y": 168,
         "w": 52,
         "h": 84
       },
@@ -78,15 +78,15 @@
     {
       "filename": "player_run_up_1.png",
       "frame": {
-        "x": 1,
-        "y": 259,
+        "x": 0,
+        "y": 252,
         "w": 52,
         "h": 84
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
-        "x": 10,
+        "x": 7,
         "y": 0,
         "w": 52,
         "h": 84
@@ -103,15 +103,15 @@
     {
       "filename": "player_run_up_3.png",
       "frame": {
-        "x": 1,
-        "y": 345,
+        "x": 0,
+        "y": 336,
         "w": 52,
         "h": 84
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
-        "x": 10,
+        "x": 7,
         "y": 0,
         "w": 52,
         "h": 84
@@ -128,8 +128,8 @@
     {
       "filename": "player_run_down_3.png",
       "frame": {
-        "x": 1,
-        "y": 431,
+        "x": 0,
+        "y": 420,
         "w": 50,
         "h": 84
       },
@@ -153,8 +153,8 @@
     {
       "filename": "player_run_down_4.png",
       "frame": {
-        "x": 1,
-        "y": 517,
+        "x": 0,
+        "y": 504,
         "w": 50,
         "h": 84
       },
@@ -178,8 +178,8 @@
     {
       "filename": "player_run_down_2.png",
       "frame": {
-        "x": 1,
-        "y": 603,
+        "x": 0,
+        "y": 588,
         "w": 48,
         "h": 84
       },
@@ -203,8 +203,8 @@
     {
       "filename": "player_run_right_2.png",
       "frame": {
-        "x": 1,
-        "y": 689,
+        "x": 0,
+        "y": 672,
         "w": 58,
         "h": 82
       },
@@ -228,8 +228,8 @@
     {
       "filename": "player_run_right_4.png",
       "frame": {
-        "x": 51,
-        "y": 603,
+        "x": 48,
+        "y": 588,
         "w": 56,
         "h": 82
       },
@@ -253,8 +253,8 @@
     {
       "filename": "player_run_right_1.png",
       "frame": {
-        "x": 53,
-        "y": 431,
+        "x": 50,
+        "y": 420,
         "w": 54,
         "h": 82
       },
@@ -278,15 +278,15 @@
     {
       "filename": "player_run_up_4.png",
       "frame": {
-        "x": 53,
-        "y": 515,
+        "x": 50,
+        "y": 502,
         "w": 52,
         "h": 82
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
-        "x": 8,
+        "x": 6,
         "y": 2,
         "w": 52,
         "h": 82
@@ -303,15 +303,15 @@
     {
       "filename": "player_run_up_2.png",
       "frame": {
-        "x": 107,
-        "y": 515,
+        "x": 102,
+        "y": 502,
         "w": 48,
         "h": 82
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
-        "x": 8,
+        "x": 6,
         "y": 2,
         "w": 48,
         "h": 82
@@ -328,8 +328,8 @@
     {
       "filename": "player_teleport_1.png",
       "frame": {
-        "x": 55,
-        "y": 173,
+        "x": 52,
+        "y": 168,
         "w": 62,
         "h": 80
       },
@@ -353,8 +353,8 @@
     {
       "filename": "player_default_2.png",
       "frame": {
-        "x": 57,
-        "y": 87,
+        "x": 54,
+        "y": 84,
         "w": 56,
         "h": 80
       },
@@ -378,8 +378,8 @@
     {
       "filename": "player_run_right_3.png",
       "frame": {
-        "x": 115,
-        "y": 87,
+        "x": 110,
+        "y": 84,
         "w": 52,
         "h": 80
       },
@@ -403,8 +403,8 @@
     {
       "filename": "player_death_2.png",
       "frame": {
-        "x": 59,
-        "y": 1,
+        "x": 56,
+        "y": 0,
         "w": 52,
         "h": 72
       },
@@ -428,8 +428,8 @@
     {
       "filename": "player_death_3.png",
       "frame": {
-        "x": 113,
-        "y": 1,
+        "x": 108,
+        "y": 0,
         "w": 52,
         "h": 62
       },
@@ -453,8 +453,8 @@
     {
       "filename": "player_teleport_4.png",
       "frame": {
-        "x": 113,
-        "y": 65,
+        "x": 108,
+        "y": 62,
         "w": 60,
         "h": 16
       },
@@ -478,8 +478,8 @@
     {
       "filename": "player_teleport_2.png",
       "frame": {
-        "x": 167,
-        "y": 1,
+        "x": 160,
+        "y": 0,
         "w": 60,
         "h": 56
       },
@@ -503,8 +503,8 @@
     {
       "filename": "player_teleport_3.png",
       "frame": {
-        "x": 55,
-        "y": 255,
+        "x": 52,
+        "y": 248,
         "w": 60,
         "h": 36
       },
@@ -532,8 +532,8 @@
     "image": "playerTexture.png",
     "format": "RGBA8888",
     "size": {
-      "w": 228,
-      "h": 772
+      "w": 220,
+      "h": 754
     },
     "scale": 1
   }
