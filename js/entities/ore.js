@@ -26,13 +26,15 @@ class Ore extends me.Entity {
     }
 
     onCollision(response, other) {
-        // play sfx, increase score, remove from level, update hud
-        me.audio.play("pickup", false);
-        game.data.score += this.scoreValue;
-        game.data.ore++;
-        this.body.collisionType = me.collision.types.NO_OBJECT;
-        this.body.setCollisionMask(me.collision.types.NO_OBJECT);
-        me.game.world.removeChild(this);
+        if (response.overlap >= game.ENTITY_COLLISION_OVERLAP_THRESHOLD) {
+            // play sfx, increase score, remove from level, update hud
+            me.audio.play("pickup", false);
+            game.data.score += this.scoreValue;
+            game.data.ore++;
+            this.body.collisionType = me.collision.types.NO_OBJECT;
+            this.body.setCollisionMask(me.collision.types.NO_OBJECT);
+            me.game.world.removeChild(this);
+        }
         return false;
     }
 }
