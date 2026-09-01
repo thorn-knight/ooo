@@ -1,6 +1,26 @@
 import * as me from 'melonjs';
 import game from '../game.js';
 
+class BackButton extends me.UITextButton {
+    constructor(x, y) {
+        super(x, y, {
+            font : game.FONT,
+            text : "BACK",
+            fillStyle : '#000000',
+            textAlign : "center",
+            textBaseline : "middle",
+            size : game.TEXT_SIZE_BUTTON,
+            hoverOffColor: game.BUTTON_HOVER_OFF_COLOR,
+            hoverOnColor: game.BUTTON_HOVER_ON_COLOR     
+        });
+        this.floating = true;
+    }
+
+    onClick(event) {
+        me.state.change(me.state.MENU);
+    }
+}
+
 class HowToPlayScreen extends me.Stage {
     onResetEvent() {
         // background color and image
@@ -54,7 +74,7 @@ class HowToPlayScreen extends me.Stage {
 
         currentY += labelYOffset;
 
-        // collect items
+        // collect gems
         let collectGemsText = new me.BitmapText(
             howToPlayX,
             currentY,
@@ -73,19 +93,42 @@ class HowToPlayScreen extends me.Stage {
         currentY += imageYOffset;
 
         let centerX = me.game.viewport.width / 2;
-        let centerXOffset = 32;
+        let gemCenterXOffset = 32;
 
-        let diamondImage = new me.Sprite(centerX - centerXOffset, currentY, {image: "diamondImage"});
+        let diamondImage = new me.Sprite(centerX - gemCenterXOffset, currentY, {image: "diamondImage"});
         me.game.world.addChild(diamondImage);
 
-        let emeraldImage = new me.Sprite((centerX - centerXOffset) - (centerXOffset * 2), currentY, {image: "emeraldImage"});
+        let emeraldImage = new me.Sprite((centerX - gemCenterXOffset) - (gemCenterXOffset * 2), currentY, {image: "emeraldImage"});
         me.game.world.addChild(emeraldImage);
 
-        let rubyImage = new me.Sprite(centerX + centerXOffset, currentY, {image: "rubyImage"});
+        let rubyImage = new me.Sprite(centerX + gemCenterXOffset, currentY, {image: "rubyImage"});
         me.game.world.addChild(rubyImage);
 
-        let sapphireImage = new me.Sprite((centerX + centerXOffset) + (centerXOffset * 2), currentY, {image: "sapphireImage"});
+        let sapphireImage = new me.Sprite((centerX + gemCenterXOffset) + (gemCenterXOffset * 2), currentY, {image: "sapphireImage"});
         me.game.world.addChild(sapphireImage);
+
+        currentY += labelYOffset;
+
+        // collect ore
+        let collectOreText = new me.BitmapText(
+            howToPlayX,
+            currentY,
+            {
+                font : game.FONT,
+                textAlign : "center",
+                textBaseline : "bottom",
+                size : game.TEXT_SIZE_LABEL,
+                text : "COLLECT ORE TO PROGRESS"
+            }
+        );
+        collectOreText.tint.setColor(0, 255, 0);
+        collectOreText.floating = true;
+        me.game.world.addChild(collectOreText);
+
+        currentY += imageYOffset;
+
+        let oreImage = new me.Sprite(centerX, currentY, {image: "oreImage"});
+        me.game.world.addChild(oreImage);
 
         currentY += labelYOffset;
 
@@ -106,14 +149,15 @@ class HowToPlayScreen extends me.Stage {
         me.game.world.addChild(avoidEnemiesText);
 
         currentY += imageYOffset + 20;
+        let enemyCenterXOffset = 50;
 
         let spawnlingImage = new me.Sprite(centerX, currentY, {image: "spawnlingImage"});
         me.game.world.addChild(spawnlingImage);
 
-        let sentinelImage = new me.Sprite(centerX - (centerXOffset * 2), currentY, {image: "sentinelImage"});
+        let sentinelImage = new me.Sprite(centerX - (enemyCenterXOffset * 2), currentY, {image: "sentinelImage"});
         me.game.world.addChild(sentinelImage);
 
-        let phantomImage = new me.Sprite(centerX + (centerXOffset * 2), currentY, {image: "phantomImage"});
+        let phantomImage = new me.Sprite(centerX + (enemyCenterXOffset * 2), currentY, {image: "phantomImage"});
         me.game.world.addChild(phantomImage);
 
         currentY += labelYOffset + 20;
@@ -133,6 +177,27 @@ class HowToPlayScreen extends me.Stage {
         useItemText.tint.setColor(0, 255, 0);
         useItemText.floating = true;
         me.game.world.addChild(useItemText);
+
+        currentY += imageYOffset;
+        let itemCenterXOffset = 50;
+
+        let bombImage = new me.Sprite(centerX - itemCenterXOffset, currentY, {image: "bombEquipped"});
+        me.game.world.addChild(bombImage);
+
+        let missileImage = new me.Sprite((centerX - itemCenterXOffset) - (itemCenterXOffset * 2), currentY + 20, {image: "homingMissileEquipped"});
+        me.game.world.addChild(missileImage);
+
+        let teleportImage = new me.Sprite(centerX + itemCenterXOffset, currentY + 10, {image: "teleportEquipped"});
+        me.game.world.addChild(teleportImage);
+
+        let speedImage = new me.Sprite((centerX + itemCenterXOffset) + (itemCenterXOffset * 2), currentY, {image: "speedBoostEquipped"});
+        me.game.world.addChild(speedImage);
+
+        currentY += labelYOffset + 20;
+
+        this.backButton = new BackButton(centerX, currentY);
+        this.backButton.anchorPoint.set(0.5, 0.5);
+        me.game.world.addChild(this.backButton);
 
         me.audio.playTrack("title-theme");
     }

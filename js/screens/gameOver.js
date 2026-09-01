@@ -99,6 +99,12 @@ class GameOverScreen extends me.Stage {
         this.backButton.anchorPoint.set(0.5, 0.5);
         me.game.world.addChild(this.backButton, 4);
 
+        // dead player sprite
+        let deadPlayerSprite = new me.Sprite(gameOverX, gameOverY + 500, {image: "playerDead"});
+        deadPlayerSprite.floating = true;
+        deadPlayerSprite.scale(2, 2);
+        me.game.world.addChild(deadPlayerSprite);
+
         // bgm
         me.audio.playTrack("gameover-theme");
     }

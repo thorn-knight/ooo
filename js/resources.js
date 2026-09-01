@@ -9,7 +9,8 @@ var resources = [
 
     /* Textures for animation resources */
     { name: "playerTexture", type:"json", src:"data/img/player/playerTexture.json" },
-    { name: "playerTexture", type:"image", src:"data/img/player/playerTexture.png" },    
+    { name: "playerTexture", type:"image", src:"data/img/player/playerTexture.png" },
+    { name: "playerDead", type:"image", src:"data/img/player/player_death_3.png" },      
 
     { name: "gemsTexture", type:"json", src:"data/img/collectible/gems/gems.json" },
     { name: "gemsTexture", type:"image", src:"data/img/collectible/gems/gems.png" },
