@@ -96,15 +96,19 @@ class HowToPlayScreen extends me.Stage {
         let gemCenterXOffset = 32;
 
         let diamondImage = new me.Sprite(centerX - gemCenterXOffset, currentY, {image: "diamondImage"});
+        diamondImage.floating = true;
         me.game.world.addChild(diamondImage);
 
         let emeraldImage = new me.Sprite((centerX - gemCenterXOffset) - (gemCenterXOffset * 2), currentY, {image: "emeraldImage"});
+        emeraldImage.floating = true;
         me.game.world.addChild(emeraldImage);
 
         let rubyImage = new me.Sprite(centerX + gemCenterXOffset, currentY, {image: "rubyImage"});
+        rubyImage.floating = true;
         me.game.world.addChild(rubyImage);
 
         let sapphireImage = new me.Sprite((centerX + gemCenterXOffset) + (gemCenterXOffset * 2), currentY, {image: "sapphireImage"});
+        sapphireImage.floating = true;
         me.game.world.addChild(sapphireImage);
 
         currentY += labelYOffset;
@@ -128,6 +132,7 @@ class HowToPlayScreen extends me.Stage {
         currentY += imageYOffset;
 
         let oreImage = new me.Sprite(centerX, currentY, {image: "oreImage"});
+        oreImage.floating = true;
         me.game.world.addChild(oreImage);
 
         currentY += labelYOffset;
@@ -152,12 +157,15 @@ class HowToPlayScreen extends me.Stage {
         let enemyCenterXOffset = 50;
 
         let spawnlingImage = new me.Sprite(centerX, currentY, {image: "spawnlingImage"});
+        spawnlingImage.floating = true;
         me.game.world.addChild(spawnlingImage);
 
         let sentinelImage = new me.Sprite(centerX - (enemyCenterXOffset * 2), currentY, {image: "sentinelImage"});
+        sentinelImage.floating = true;
         me.game.world.addChild(sentinelImage);
 
         let phantomImage = new me.Sprite(centerX + (enemyCenterXOffset * 2), currentY, {image: "phantomImage"});
+        phantomImage.floating = true;
         me.game.world.addChild(phantomImage);
 
         currentY += labelYOffset + 20;
@@ -182,15 +190,19 @@ class HowToPlayScreen extends me.Stage {
         let itemCenterXOffset = 50;
 
         let bombImage = new me.Sprite(centerX - itemCenterXOffset, currentY, {image: "bombEquipped"});
+        bombImage.floating = true;
         me.game.world.addChild(bombImage);
 
         let missileImage = new me.Sprite((centerX - itemCenterXOffset) - (itemCenterXOffset * 2), currentY + 20, {image: "homingMissileEquipped"});
+        missileImage.floating = true;
         me.game.world.addChild(missileImage);
 
         let teleportImage = new me.Sprite(centerX + itemCenterXOffset, currentY + 10, {image: "teleportEquipped"});
+        teleportImage.floating = true;
         me.game.world.addChild(teleportImage);
 
         let speedImage = new me.Sprite((centerX + itemCenterXOffset) + (itemCenterXOffset * 2), currentY, {image: "speedBoostEquipped"});
+        speedImage.floating = true;
         me.game.world.addChild(speedImage);
 
         currentY += labelYOffset + 20;
