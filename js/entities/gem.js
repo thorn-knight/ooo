@@ -54,13 +54,21 @@ class GemEntity extends me.Entity {
         me.game.world.addChild(this);
     }
 
-    onCollision() {
-        // play sound effect, increase score, then delete it from the map
-        me.audio.play("pickup", false);
-        game.data.score += this.scoreValue;
-        this.body.collisionType = me.collision.types.NO_OBJECT;
-        this.body.setCollisionMask(me.collision.types.NO_OBJECT);
-        me.game.world.removeChild(this);
+    onCollision(response, other) {
+        switch (other.body.collisionType) {
+            case me.collision.types.PLAYER_OBJECT :
+                if (response.overlap >= game.ENTITY_COLLISION_OVERLAP_THRESHOLD) {
+                    // play sound effect, increase score, then delete it from the map
+                    me.audio.play("pickup", false);
+                    game.data.score += this.scoreValue;
+                    this.body.collisionType = me.collision.types.NO_OBJECT;
+                    this.body.setCollisionMask(me.collision.types.NO_OBJECT);
+                    me.game.world.removeChild(this);
+                }
+                break;
+            default :
+                break;
+        }
         return false;
     }
 }

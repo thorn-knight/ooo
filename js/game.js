@@ -34,6 +34,11 @@ var game = {
     collectibleManager : null,
     enemyManager : null,
 
+    // global collision overlap thresholds to be used in onCollision logic
+    // if response.overlap is less than this don't count it as a collision
+    WORLD_SHAPE_COLLISION_OVERLAP_THRESHOLD : 1.8,
+    ENTITY_COLLISION_OVERLAP_THRESHOLD : 10,
+
     BACKGROUND_COLOR : "#313431"
 };
 

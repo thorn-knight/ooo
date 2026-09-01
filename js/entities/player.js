@@ -190,16 +190,18 @@ class PlayerEntity extends me.Entity {
         let retVal = true;
         switch (other.body.collisionType) {
             case me.collision.types.WORLD_SHAPE :
-                if (response.overlap < 1.8)
+                if (response.overlap < game.WORLD_SHAPE_COLLISION_OVERLAP_THRESHOLD)
                     retVal = false;
                 break;
             case me.collision.types.COLLECTABLE_OBJECT :
                 retVal = false;
-                if (other.name === ITEM_ENTITY_NAME)
+                if ((other.name === ITEM_ENTITY_NAME) && (response.overlap >= game.ENTITY_COLLISION_OVERLAP_THRESHOLD))
                     this.equipItem(other);
                 break;
             case me.collision.types.ENEMY_OBJECT :
-                if (!this.ignoreEnemyCollision) {
+                if (response.overlap < game.ENTITY_COLLISION_OVERLAP_THRESHOLD)
+                    retVal = false;
+                else if (!this.ignoreEnemyCollision) {
                     retVal = false;
                     this.ignoreEnemyCollision = true;
                     this.death();

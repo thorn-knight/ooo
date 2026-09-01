@@ -1,4 +1,5 @@
 import * as me from 'melonjs';
+import game from '../game.js';
 import { getRandomWalkableGridTile, screenToGridCoords } from './mapUtil.js';
 import PathableEntity from './pathableEntity.js';
 import { MOVE_DIRECTION } from './entityUtil.js';
@@ -42,8 +43,11 @@ class EnemyEntity extends PathableEntity {
         let retVal = true;
         switch (other.body.collisionType) {
             case me.collision.types.PLAYER_OBJECT :
-                retVal = false;
-                this.hasKilledPlayer();
+                if (response.overlap < game.ENTITY_COLLISION_OVERLAP_THRESHOLD) {
+                    retVal = false;
+                }
+                else
+                    this.hasKilledPlayer();
                 break;
             case me.collision.types.COLLECTABLE_OBJECT :
                 retVal = false;
