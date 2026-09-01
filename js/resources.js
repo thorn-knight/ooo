@@ -14,18 +14,26 @@ var resources = [
     { name: "gemsTexture", type:"json", src:"data/img/collectible/gems/gems.json" },
     { name: "gemsTexture", type:"image", src:"data/img/collectible/gems/gems.png" },
 
+    { name: "diamondImage", type:"image", src:"data/img/collectible/gems/diamond_2.png" },
+    { name: "emeraldImage", type:"image", src:"data/img/collectible/gems/emerald_2.png" },
+    { name: "rubyImage", type:"image", src:"data/img/collectible/gems/ruby_2.png" },
+    { name: "sapphireImage", type:"image", src:"data/img/collectible/gems/sapphire_2.png" },
+
     { name: "oreTexture", type:"json", src:"data/img/collectible/ore/ore.json" },
     { name: "oreTexture", type:"image", src:"data/img/collectible/ore/ore.png" },
     { name: "oreImage", type:"image", src:"data/img/collectible/ore/ore_default_1.png" },
     
     { name: "phantomTexture", type:"json", src:"data/img/enemy/phantom/phantom.json" },
     { name: "phantomTexture", type:"image", src:"data/img/enemy/phantom/phantom.png" },
+    { name: "phantomImage", type:"image", src:"data/img/enemy/phantom/phantom_run_right_1.png" },
 
     { name: "spawnlingTexture", type:"json", src:"data/img/enemy/spawnling/spawnling.json" },
     { name: "spawnlingTexture", type:"image", src:"data/img/enemy/spawnling/spawnling.png" },
+    { name: "spawnlingImage", type:"image", src:"data/img/enemy/spawnling/spawnling_run_right_2.png" },
 
     { name: "sentinelTexture", type:"json", src:"data/img/enemy/sentinel/sentinel.json" },
     { name: "sentinelTexture", type:"image", src:"data/img/enemy/sentinel/sentinel.png" },
+    { name: "sentinelImage", type:"image", src:"data/img/enemy/sentinel/sentinel_run_forward_1.png" },
 
     { name: "bombTexture", type:"json", src:"data/img/item/bomb/bomb.json" },
     { name: "bombTexture", type:"image", src:"data/img/item/bomb/bomb.png" },
