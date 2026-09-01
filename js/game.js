@@ -39,6 +39,10 @@ var game = {
     WORLD_SHAPE_COLLISION_OVERLAP_THRESHOLD : 1.8,
     ENTITY_COLLISION_OVERLAP_THRESHOLD : 10,
 
+    // text sizes for buttons and game title
+    TEXT_SIZE_TITLE : 1.5,
+    TEXT_SIZE_BUTTON : 1.2,
+
     BACKGROUND_COLOR : "#313431"
 };
 

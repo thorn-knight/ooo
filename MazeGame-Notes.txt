@@ -36,7 +36,6 @@ Nice to have:
 2. Enemy behavior modes? Regular vs aggro?
 3. Homing missile behavior/animation looks a bit wonky, see if this can be cleaned up.
 4. General code clean up, remove magic numbers in hud, etc.
-5. "Nice" sfx + fade out and in on completing level.
 
 original melon 17 import map entry for reference: "melonjs": "https://cdn.jsdelivr.net/npm/melonjs@17/+esm",
 previous melon import map: "melonjs": "https://cdn.jsdelivr.net/npm/melonjs@19.7.1/+esm",

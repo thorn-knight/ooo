@@ -5,13 +5,11 @@ class BackToTitleButton extends me.UITextButton {
     constructor(x, y) {
         super(x, y, {
             font : "PressStart2P",
-            text : "Back",
+            text : "BACK",
             fillStyle : '#000000',
             textAlign : "center",
             textBaseline : "middle",
-            size : 1,
-            borderWidth: 200,
-            borderHeight: 50,
+            size : game.TEXT_SIZE_BUTTON,
             hoverOffColor: '#00FF00',
             hoverOnColor: 'rgb(22, 152, 22)'
         });

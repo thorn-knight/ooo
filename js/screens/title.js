@@ -1,17 +1,18 @@
 import * as me from 'melonjs';
 import game from '../game.js';
 
+const BUTTON_OFFSET_WIDTH = 40;
+const BUTTON_OFFSET_HEIGHT = 20;
+
 class PlayButton extends me.UITextButton {
     constructor(x, y) {
         super(x, y, {
             font : "PressStart2P",
-            text : "Play",
+            text : "PLAY",
             fillStyle : '#000000',
             textAlign : "center",
             textBaseline : "middle",
-            size : 1,
-            borderWidth: 200,
-            borderHeight: 50,
+            size : game.TEXT_SIZE_BUTTON,
             hoverOffColor: '#00FF00',
             hoverOnColor: 'rgb(22, 152, 22)'
         });
@@ -21,7 +22,22 @@ class PlayButton extends me.UITextButton {
     onClick(event) {
         me.state.change(me.state.PLAY);
     }
+}
 
+class HowToPlayButton extends me.UITextButton {
+    constructor(x, y) {
+        super(x, y, {
+            font : "PressStart2P",
+            text : "HOW TO PLAY",
+            fillStyle : '#000000',
+            textAlign : "center",
+            textBaseline : "middle",
+            size : game.TEXT_SIZE_BUTTON,
+            hoverOffColor: '#00FF00',
+            hoverOnColor: 'rgb(22, 152, 22)'        
+        });
+        this.floating = true;
+    }
 }
 
 class TitleScreen extends me.Stage {
@@ -43,7 +59,7 @@ class TitleScreen extends me.Stage {
                 font : "PressStart2P",
                 textAlign : "center",
                 textBaseline : "bottom",
-                size : 1.5,
+                size : game.TEXT_SIZE_TITLE,
                 text : "OUTRAGEOUS ORBITAL ORE"
             }
         );
@@ -54,6 +70,10 @@ class TitleScreen extends me.Stage {
         this.playButton = new PlayButton(titleX, titleY + 100);
         this.playButton.anchorPoint.set(0.5, 0.5);
         me.game.world.addChild(this.playButton, 2);
+
+        this.howToPlayButton = new HowToPlayButton(titleX, titleY + 200);
+        this.howToPlayButton.anchorPoint.set(0.5, 0.5);
+        me.game.world.addChild(this.howToPlayButton, 3);
 
         // bgm
         me.audio.playTrack("title-theme");
