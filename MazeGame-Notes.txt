@@ -27,13 +27,15 @@ https://cdn.jsdelivr.net/npm/javascript-astar@0.4.1/astar.min.js
 
 
 Roadmap forward to do:
-1. Collision detection now seems fixed in latest melon release 19.4. Pointed at that now. Current issue is that when walking upwards player stops sometimes. Seems to be when there's collision horizontally to the tile? This might also be a melon thing, may just work around it for now.
+1. When walking upwards player stops sometimes when they shouldn't. Seems to be when there's collision with players top y-axis with certain tiles. 
 2. Implement collision detection a bit better. I'm thinking calculate distance of center of sprites and only consider it a collision when its within a certain distance in onCollision. Maybe can throw this in a util.
 3. Extra maps, load random one on new level.
+4. Bug where multiple enemies can collide with player at the same time, causing multiple loss of lives and breaking game over logic when number of lives gets set to 0.
 
 Nice to have: 
-1. Extra lives(?)
+1. Extra lives. This might make the game a bit too easy, just an idea for now.
 2. Enemy behavior modes? Regular vs aggro?
+3. Homing missile behavior/animation looks a bit wonky, see if this can be cleaned up.
 
 original melon 17 import map entry for reference: "melonjs": "https://cdn.jsdelivr.net/npm/melonjs@17/+esm",
 previous melon import map: "melonjs": "https://cdn.jsdelivr.net/npm/melonjs@19.7.1/+esm",
