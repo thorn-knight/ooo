@@ -6,6 +6,7 @@ var walkableGridTiles = [];
 // Builds a 2d array of 0s (walls) and 1s (walkable tiles) from the current level
 export function getGraphMatrixFromCurrentLevel() {
     console.log("mapUtil entering getGraphMatrixFromCurrentLevel...");
+    walkableGridTiles = [];
     const level = me.level.getCurrentLevel();
     const layers = level.getLayers();
     var graphMatrix = [];
@@ -33,7 +34,7 @@ export function getGraphMatrixFromCurrentLevel() {
     }
     console.log("mapUtil getGraphMatrixFromCurrentLevel graph:");
     console.log(graphMatrix);
-    return graphMatrix;
+    levelMatrix = graphMatrix;
 }
 
 /* Convert melon screen coords into grid coords. Important to note
@@ -59,11 +60,6 @@ export function gridToScreenCoords(gridCoord) {
 }
 
 export function getPath(startPoint, endPoint) {
-
-    if (levelMatrix === null) {
-        levelMatrix = getGraphMatrixFromCurrentLevel();
-    }
-
     var graph = new Graph(levelMatrix, {diagonal : false});
     let start = graph.grid[startPoint.x][startPoint.y];
     let end = graph.grid[endPoint.x][endPoint.y];

@@ -144,6 +144,9 @@ export default function onload() {
         game.itemManager = new ItemManager();
         game.enemyManager = new EnemyManager();
 
+        // set game current level map to a random one
+        game.currentLevelMap = game.MAPS[Math.floor(Math.random() * game.MAPS.length)];
+
         // add some keyboard shortcuts
         me.event.on(me.event.KEYDOWN, (action, keyCode /*, edge */) => {
 

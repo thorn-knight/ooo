@@ -7,6 +7,9 @@ var resources = [
     { name: "mars-map1", type:"json", src:"data/map/mars/mars-map1.json" },
     { name: "mars-map1", type:"tmx", src:"data/map/mars/mars-map1.tmx" },
 
+    { name: "mars-map2", type:"json", src:"data/map/mars/mars-map2.json" },
+    { name: "mars-map2", type:"tmx", src:"data/map/mars/mars-map2.tmx" },
+
     /* Textures for animation resources */
     { name: "playerTexture", type:"json", src:"data/img/player/playerTexture.json" },
     { name: "playerTexture", type:"image", src:"data/img/player/playerTexture.png" },

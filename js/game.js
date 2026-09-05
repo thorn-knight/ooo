@@ -34,8 +34,15 @@ var game = {
     collectibleManager : null,
     enemyManager : null,
 
+    // the current levels map, used by play.js to determine map to re-load on player death
+    // and to set when loading the next level
+    currentLevelMap : null,
+
     // global font
     FONT : "PressStart2P",
+
+    // list of maps
+    MAPS : ["mars-map1", "mars-map2"],
 
     // global collision overlap thresholds to be used in onCollision logic
     // if response.overlap is less than this don't count it as a collision

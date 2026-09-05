@@ -7,12 +7,13 @@ class PlayScreen extends me.Stage {
     onResetEvent() {
         if (game.data.loadNextLevel) {
             me.audio.play("level_complete", false);
+            game.currentLevelMap = game.MAPS[Math.floor(Math.random() * game.MAPS.length)];
             me.game.viewport.fadeIn("#FFFFFF", 175, ()=> {
-                me.level.load("mars-map1", {onLoaded: this.onLevelLoaded});
+                me.level.load(game.currentLevelMap, {onLoaded: this.onLevelLoaded});
             });
         }
         else
-            me.level.load("mars-map1", {onLoaded: this.onLevelLoaded});
+            me.level.load(game.currentLevelMap, {onLoaded: this.onLevelLoaded});
     }
 
     onLevelLoaded() {
