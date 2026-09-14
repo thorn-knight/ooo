@@ -42,7 +42,7 @@ var game = {
     FONT : "PressStart2P",
 
     // list of maps
-    MAPS : ["mars-map1", "mars-map2"],
+    MAPS : ["mars-map1", "mars-map2", "ice-map1"],
 
     // global collision overlap thresholds to be used in onCollision logic
     // if response.overlap is less than this don't count it as a collision

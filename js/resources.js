@@ -10,6 +10,14 @@ var resources = [
     { name: "mars-map2", type:"json", src:"data/map/mars/mars-map2.json" },
     { name: "mars-map2", type:"tmx", src:"data/map/mars/mars-map2.tmx" },
 
+    
+    { name: "ice-tileset", type:"json", src:"data/map/ice/ice-tileset.json" },
+    { name: "ice-tileset", type:"tsx", src:"data/map/ice/ice-tileset.tsx" },
+    { name: "ice-tileset", type:"image", src:"data/map/ice/ice-tileset.png" },
+
+    { name: "ice-map1", type:"json", src:"data/map/ice/ice-map1.json" },
+    { name: "ice-map1", type:"tmx", src:"data/map/ice/ice-map1.tmx" },
+
     /* Textures for animation resources */
     { name: "playerTexture", type:"json", src:"data/img/player/playerTexture.json" },
     { name: "playerTexture", type:"image", src:"data/img/player/playerTexture.png" },
