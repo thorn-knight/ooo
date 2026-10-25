@@ -10,16 +10,15 @@ var resources = [
     { name: "mars-map2", type:"json", src:"data/map/mars/mars-map2.json" },
     { name: "mars-map2", type:"tmx", src:"data/map/mars/mars-map2.tmx" },
 
-    
-    { name: "ice-tileset", type:"json", src:"data/map/ice/ice-tileset.json" },
-    { name: "ice-tileset", type:"tsx", src:"data/map/ice/ice-tileset.tsx" },
-    { name: "ice-tileset", type:"image", src:"data/map/ice/ice-tileset.png" },
+    { name: "venus-tileset", type:"json", src:"data/map/venus/venus-tileset.json" },
+    { name: "venus-tileset", type:"tsx", src:"data/map/venus/venus-tileset.tsx" },
+    { name: "venus-tileset", type:"image", src:"data/map/venus/venus-tileset.png" },
 
-    { name: "ice-map1", type:"json", src:"data/map/ice/ice-map1.json" },
-    { name: "ice-map1", type:"tmx", src:"data/map/ice/ice-map1.tmx" },
+    { name: "venus-map1", type:"json", src:"data/map/venus/venus-map1.json" },
+    { name: "venus-map1", type:"tmx", src:"data/map/venus/venus-map1.tmx" },
 
-    { name: "ice-map2", type:"json", src:"data/map/ice/ice-map2.json" },
-    { name: "ice-map2", type:"tmx", src:"data/map/ice/ice-map2.tmx" },
+    { name: "venus-map2", type:"json", src:"data/map/venus/venus-map2.json" },
+    { name: "venus-map2", type:"tmx", src:"data/map/venus/venus-map2.tmx" },
 
     /* Textures for animation resources */
     { name: "playerTexture", type:"json", src:"data/img/player/playerTexture.json" },

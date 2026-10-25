@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="12" height="11" tilewidth="64" tileheight="84" infinite="0" nextlayerid="8" nextobjectid="58">
+ <editorsettings>
+  <export target="venus-map1.json" format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="venus-tileset.tsx"/>
+ <layer id="1" name="Background" width="12" height="11">
+  <data encoding="csv">
+3,91,4,2,37,208,10,199,118,181,5,208,
+181,190,73,208,3,190,172,3,163,2,190,3,
+208,55,190,127,163,100,109,118,190,100,28,181,
+163,136,3,172,181,190,3,2,208,3,172,190,
+181,8,2,100,109,199,118,163,91,199,181,37,
+190,208,172,181,190,3,2,208,181,3,172,2,
+10,109,4,3,82,163,10,19,118,208,7,181,
+190,163,181,163,3,208,181,2,163,190,136,172,
+181,1,3,37,2,154,208,145,37,181,46,3,
+2,208,163,181,190,3,172,208,2,73,154,190,
+91,109,19,118,208,127,181,91,4,163,208,181
+</data>
+ </layer>
+ <objectgroup id="2" name="PlayerSpawn">
+  <object id="1" name="Player" x="384" y="420" width="64" height="84"/>
+ </objectgroup>
+ <objectgroup id="3" name="Mineshaft">
+  <object id="2" name="Mineshaft" x="576" y="756" width="64" height="84"/>
+  <object id="3" name="Mineshaft" x="128" y="84" width="64" height="84"/>
+ </objectgroup>
+ <objectgroup id="4" name="ItemSpawnList">
+  <object id="4" name="ItemSpawn" x="128" y="756" width="64" height="84"/>
+  <object id="5" name="ItemSpawn" x="384" y="840" width="64" height="84"/>
+  <object id="6" name="ItemSpawn" x="640" y="420" width="64" height="84"/>
+  <object id="7" name="ItemSpawn" x="192" y="0" width="64" height="84"/>
+  <object id="8" name="ItemSpawn" x="448" y="84" width="64" height="84"/>
+ </objectgroup>
+ <objectgroup id="5" name="Collision">
+  <object id="9" x="0" y="0">
+   <polyline points="0,0 64,0"/>
+  </object>
+  <object id="10" x="192" y="0">
+   <polyline points="0,0 64,0"/>
+  </object>
+  <object id="11" x="320" y="0">
+   <polyline points="0,0 64,0"/>
+  </object>
+  <object id="12" x="576" y="0">
+   <polyline points="0,0 64,0"/>
+  </object>
+  <object id="13" x="704" y="0">
+   <polyline points="0,0 64,0"/>
+  </object>
+  <object id="14" x="768" y="0">
+   <polyline points="0,0 0,336"/>
+  </object>
+  <object id="15" x="768" y="420">
+   <polyline points="0,0 0,504"/>
+  </object>
+  <object id="17" x="768" y="924">
+   <polyline points="0,0 -192,0"/>
+  </object>
+  <object id="18" x="448" y="924">
+   <polyline points="0,0 -64,0"/>
+  </object>
+  <object id="19" x="320" y="924">
+   <polyline points="0,0 -64,0"/>
+  </object>
+  <object id="20" x="0" y="840">
+   <polyline points="0,0 0,-252"/>
+  </object>
+  <object id="21" x="0" y="504">
+   <polyline points="0,0 0,-504"/>
+  </object>
+  <object id="22" x="64" y="0" width="128" height="84"/>
+  <object id="23" x="256" y="0" width="64" height="84"/>
+  <object id="24" x="384" y="0" width="192" height="84"/>
+  <object id="25" x="640" y="0" width="64" height="84"/>
+  <object id="26" x="64" y="168" width="64" height="252"/>
+  <object id="27" x="192" y="168" width="64" height="84"/>
+  <object id="28" x="320" y="168" width="192" height="84"/>
+  <object id="29" x="576" y="168" width="128" height="84"/>
+  <object id="30" x="192" y="336" width="256" height="84"/>
+  <object id="31" x="512" y="336" width="128" height="84"/>
+  <object id="32" x="704" y="336" width="64" height="84"/>
+  <object id="33" x="0" y="504" width="192" height="84"/>
+  <object id="34" x="256" y="504" width="64" height="84"/>
+  <object id="35" x="384" y="504" width="192" height="84"/>
+  <object id="36" x="640" y="504" width="64" height="336"/>
+  <object id="37" x="64" y="672" width="64" height="84"/>
+  <object id="38" x="192" y="672" width="64" height="84"/>
+  <object id="39" x="320" y="672" width="64" height="84"/>
+  <object id="40" x="448" y="672" width="128" height="84"/>
+  <object id="41" x="0" y="840" width="256" height="84"/>
+  <object id="42" x="320" y="840" width="64" height="84"/>
+  <object id="43" x="448" y="840" width="128" height="84"/>
+ </objectgroup>
+ <objectgroup id="6" name="GemSpawnList">
+  <object id="44" name="GemSpawn" x="128" y="252" width="64" height="84"/>
+  <object id="45" name="GemSpawn" x="384" y="588" width="64" height="84"/>
+  <object id="47" name="GemSpawn" x="704" y="588" width="64" height="84"/>
+  <object id="48" name="GemSpawn" x="64" y="588" width="64" height="84"/>
+  <object id="50" name="GemSpawn" x="704" y="0" width="64" height="84"/>
+ </objectgroup>
+ <objectgroup id="7" name="OreSpawnList">
+  <object id="51" name="OreSpawn" x="0" y="0" width="64" height="84"/>
+  <object id="53" name="OreSpawn" x="0" y="756" width="64" height="84"/>
+  <object id="54" name="OreSpawn" x="640" y="840" width="64" height="84"/>
+  <object id="57" name="OreSpawn" x="576" y="84" width="64" height="84"/>
+ </objectgroup>
+</map>
