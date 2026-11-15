@@ -20,6 +20,13 @@ var resources = [
     { name: "venus-map2", type:"json", src:"data/map/venus/venus-map2.json" },
     { name: "venus-map2", type:"tmx", src:"data/map/venus/venus-map2.tmx" },
 
+    { name: "ice-tileset", type:"json", src:"data/map/ice/ice-tileset.json" },
+    { name: "ice-tileset", type:"tsx", src:"data/map/ice/ice-tileset.tsx" },
+    { name: "ice-tileset", type:"image", src:"data/map/ice/ice-tileset.png" },
+
+    { name: "ice-map1", type:"tmx", src:"data/map/ice/ice-map1.tmx" },
+    { name: "ice-map2", type:"tmx", src:"data/map/ice/ice-map2.tmx" },
+
     /* Textures for animation resources */
     { name: "playerTexture", type:"json", src:"data/img/player/playerTexture.json" },
     { name: "playerTexture", type:"image", src:"data/img/player/playerTexture.png" },
