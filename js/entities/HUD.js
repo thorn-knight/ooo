@@ -163,38 +163,17 @@ class UIContainer extends me.Container {
         this.name = "HUD";
 
         let bounds = me.level.getCurrentLevel().getBounds();
-
-        // level 
-        let levelXPos = bounds.right + 200;
-        let levelYPos = bounds.top + 40;
-        this.levelItem = new LevelItem(levelXPos, levelYPos);
-        this.levelItem.tint.setColor(0, 255, 0);
-        this.levelItem.z = Infinity;
-
-        // score
-        let scoreXPos = bounds.right + 200;
-        let scoreYPos = bounds.top + 80;
-        this.scoreItem = new ScoreItem(scoreXPos, scoreYPos);
-        this.scoreItem.tint.setColor(0, 255, 0);
-        this.scoreItem.z = Infinity;
-
-        // lives
-        let livesIconXPos = bounds.right + 150;
-        let livesIconYPos = bounds.top + 150;
-        this.livesIcon = new me.Sprite(livesIconXPos, livesIconYPos, {image: "livesIcon"});
-        this.livesIcon.relative = new me.Vector2d(livesIconXPos, livesIconYPos);
-        this.livesIcon.floating = false;
-        this.livesIcon.z = Infinity;
-
-        let livesCountXPos = bounds.right + 225;
-        let livesCountYPos = bounds.top + 175;
-        this.livesCountItem = new LivesCountItem(livesCountXPos, livesCountYPos);
-        this.livesCountItem.z = Infinity;
-        this.livesCountItem.tint.setColor(0, 255, 0);
+        let yCenter = me.level.getCurrentLevel().height / 2;
+        let xOffset = 160;
+        let yOffset = 80;
+        let xOffsetIcon = 125;
+        let xOffsetLabel = 110;
+        let yOffsetLabel = 15;
 
         // equipped item label
-        let equippedLabelXPos = bounds.right + 150;
-        let equippedLabelYPos = bounds.top + 250;
+        let yEquipAreaOffset = 15;
+        let equippedLabelXPos = bounds.right + xOffset;
+        let equippedLabelYPos = yCenter - yOffset;
         this.equippedLabel = new me.BitmapText(
             equippedLabelXPos,
             equippedLabelYPos,
@@ -203,7 +182,7 @@ class UIContainer extends me.Container {
                 textAlign : "center",
                 textBaseline : "bottom",
                 size : 1,
-                text : "Equipped: "
+                text : "Equipped : "
             }
         );
         this.equippedLabel.relative = new me.Vector2d(equippedLabelXPos, equippedLabelYPos);
@@ -212,26 +191,54 @@ class UIContainer extends me.Container {
         this.equippedLabel.tint.setColor(0, 255, 0);
 
         // equipped item area, hud itself will update this
-        this.equippedAreaXPos = bounds.right + 300;
-        this.equippedAreaYPos = bounds.top + 235;
+        this.equippedAreaXPos = equippedLabelXPos + xOffset;
+        this.equippedAreaYPos = equippedLabelYPos - yEquipAreaOffset;
 
-        // equipped item sprite image
-        this.equippedItemSprite = null;
-        this.isEquipped = false;
+        // score
+        let scoreXPos = bounds.right + xOffset;
+        let scoreYPos = equippedLabelYPos - yOffset;
+        this.scoreItem = new ScoreItem(scoreXPos, scoreYPos);
+        this.scoreItem.tint.setColor(0, 255, 0);
+        this.scoreItem.z = Infinity;
+
+        // level 
+        let levelXPos = bounds.right + xOffset;
+        let levelYPos = scoreYPos - yOffset;
+        this.levelItem = new LevelItem(levelXPos, levelYPos);
+        this.levelItem.tint.setColor(0, 255, 0);
+        this.levelItem.z = Infinity;
 
         // ore icon and count
-        let oreIconXPos = bounds.right + 150;
-        let oreIconYPos = bounds.top + 325;
+        let oreIconXPos = bounds.right + xOffsetIcon;
+        let oreIconYPos = equippedLabelYPos + yOffset;
         this.oreIcon = new me.Sprite(oreIconXPos, oreIconYPos, {image: "oreImage"});
         this.oreIcon.relative = new me.Vector2d(oreIconXPos, oreIconYPos);
         this.oreIcon.floating = false;
         this.oreIcon.z = Infinity;
 
-        let oreCountXPos = bounds.right + 250;
-        let oreCountYPos = bounds.top + 350;
+        let oreCountXPos = oreIconXPos + xOffsetLabel;
+        let oreCountYPos = oreIconYPos + yOffsetLabel;
         this.oreCountItem = new OreCountItem(oreCountXPos, oreCountYPos);
         this.oreCountItem.z = Infinity;
         this.oreCountItem.tint.setColor(0, 255, 0);
+
+        // lives
+        let livesIconXPos = bounds.right + xOffsetIcon;
+        let livesIconYPos = oreCountYPos + yOffset;
+        this.livesIcon = new me.Sprite(livesIconXPos, livesIconYPos, {image: "livesIcon"});
+        this.livesIcon.relative = new me.Vector2d(livesIconXPos, livesIconYPos);
+        this.livesIcon.floating = false;
+        this.livesIcon.z = Infinity;
+
+        let livesCountXPos = livesIconXPos + xOffsetLabel;
+        let livesCountYPos = livesIconYPos + yOffsetLabel;
+        this.livesCountItem = new LivesCountItem(livesCountXPos, livesCountYPos);
+        this.livesCountItem.z = Infinity;
+        this.livesCountItem.tint.setColor(0, 255, 0);
+
+        // equipped item sprite image
+        this.equippedItemSprite = null;
+        this.isEquipped = false;
 
         // add our child elements
         me.game.world.addChild(this.levelItem);
