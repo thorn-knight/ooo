@@ -284,6 +284,23 @@ class PlayerEntity extends me.Entity {
         me.audio.play("speed", false);
         this.body.setMaxVelocity(this.SPEED_BOOSTED, this.SPEED_BOOSTED);
         this.isSpeedBoosted = true;
+        let currentMoveDirection = getMovementDirectionFromVel(this.body.vel);
+        this.body.vel.set(0, 0);
+        switch (currentMoveDirection) {
+            case MOVE_DIRECTION.RIGHT :
+                this.body.force.set(this.body.maxVel.x, 0);
+                break;
+            case MOVE_DIRECTION.LEFT :
+                this.body.force.set(-this.body.maxVel.x, 0);
+                break;
+            case MOVE_DIRECTION.UP :
+                this.body.force.set(0, -this.body.maxVel.y);
+                break;
+            case MOVE_DIRECTION.DOWN :
+                this.body.force.set(0, this.body.maxVel.y);
+                break;
+            default :
+        }
     }
 
     teleport() {
